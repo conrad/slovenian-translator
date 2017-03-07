@@ -1,0 +1,22 @@
+{
+  "name": "the-slovenian",
+  "version": "0.0.1",
+  "description": "An Alexa skill for translating English to Slovenian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conrad/slovenian-translator.git"
+  },
+  "author": "drtomcatan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conrad/slovenian-translator/issues"
+  },
+  "homepage": "https://github.com/conrad/slovenian-translator#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7"
+  }
+}
