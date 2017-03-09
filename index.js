@@ -2,7 +2,6 @@
 
 var Alexa = require("alexa-sdk");
 var dictionary = require("utils/dictionary.js");
-var helpers = require("utils/helpers.js");
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -36,7 +35,7 @@ var handlers = {
         // this.emit(':tell', 'the word for ' + itemName + ' is ' + word);
         this.emit(':tell', 'the word for ' + itemName +
             ' is ' + word.phonetic +
-            ' spelled ' + helpers.getSpelling(word.word)
+            ' spelled <say-as interpret-as="spell-out">' + word.word + '</say-as>'
         );
     } else {
       if (itemName) {
