@@ -101,6 +101,10 @@ module.exports = {
     word: "kdaj",
     phonetic: "kdye"
   },
+  who: {
+    word: "kdo",
+    phonetic: "kdoe"
+  },
   why: {
     word: "zikaj",
     phonetic: "zikye"
@@ -344,6 +348,114 @@ module.exports = {
   wait: {
     word: "pocakaj",
     phonetic: "poe cha kye"
+  },
+  "like a dog": {
+    word: "kot pse",
+    phonetic: "coat puh say"
+  },
+  "I like": {
+    word: "pocakaj",
+    phonetic: "poe cha kye"
+  },
+  "I like coffee": {
+    word: "vsec mi je kavo",
+    phonetic: "ooshetch me yay kavo"
+  },
+  "I need coffee": {
+    word: "rabim kavo",
+    phonetic: "robbeem kavo"
+  },
+  "I want coffee": {
+    word: "hocem kavo",
+    phonetic: "hoe chem kavo"
+  },
+  "I want a dog": {
+    word: "hocem psa",
+    phonetic: "hoe chem puh saw"
+  },
+  "I love you": {
+    word: "ljubim te",
+    phonetic: "lyoobeem tay"
+  },
+  dog: {
+    word: "pes",
+    phonetic: "pays"
+  },
+  cat: {
+    word: "macka",
+    phonetic: "motchka"
+  },
+  bird: {
+    word: "ptica",
+    phonetic: "puh teetza"
+  },
+  insect: {
+    word: "insecktov",
+    phonetic: "eensect of"
+  },
+  bug: {
+    word: "bug",
+    phonetic: "boog"
+  },
+  wait: {
+    word: "pocakaj",
+    phonetic: "poe cha kye"
+  },
+  accountant: {
+    word: "racunovodja",
+    phonetic: "rah choon ovodya"
+  },
+  lawyer: {
+    word: "odvetnik",
+    phonetic: "ode vate neek"
+  },
+  doctor: {
+    word: "zdravnik",
+    phonetic: "zdrau neek"
+  },
+  engineer: {
+    word: "inzenir",
+    phonetic: "eenjayneer"
+  },
+  "mechanical engineer": {
+    word: "strojni inzenir",
+    phonetic: "stroynee eenjayneer"
+  },
+  "electrical engineer": {
+    word: "electrikoinzenir",
+    phonetic: "aylayktreeko eenjayneer"
+  },
+  marketer: {
+    word: "trznik",
+    phonetic: "terjneek"
+  },
+  salesperson: {
+    word: "prodajalec",
+    phonetic: "pro die ya lates"
+  },
+  employee: {
+    word: "zaposleni",
+    phonetic: "zah poe slay knee"
+  },
+  employer: {
+    word: "delodajalec",
+    phonetic: "day low die ya lates"
+  },
+  your: {
+    word: "tvoj",
+    phonetic: "tvoy"
+  },
+  my: {
+    word: "moy",
+    phonetic: "moy"
+  },
+  "bless you": {
+    word: "na zdravje",
+    phonetic: "nah zdrau yay"
+  },
+  cheers: {
+    word: "na zdravje",
+    phonetic: "nah zdrau yay"
   },
   "how are you": {
     word: "kako si",
