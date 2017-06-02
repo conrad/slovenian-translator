@@ -2,6 +2,7 @@
 
 var Alexa = require("alexa-sdk");
 var dictionary = require("utils/dictionary.js");
+var GTranslate = require("utils/translateAPI.js");
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
