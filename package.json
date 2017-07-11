@@ -18,6 +18,6 @@
   "homepage": "https://github.com/conrad/slovenian-translator#readme",
   "dependencies": {
     "alexa-sdk": "^1.0.7",
-    "@google-cloud/translate": "0.8.1",
+    "@google-cloud/translate": "0.8.1"
   }
 }

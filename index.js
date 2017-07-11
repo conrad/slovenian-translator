@@ -2,7 +2,7 @@
 
 var Alexa = require("alexa-sdk");
 var dictionary = require("utils/dictionary.js");
-var GTranslate = require("utils/translateAPI.js");
+var translator = require("utils/translator.js");
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -29,7 +29,8 @@ var handlers = {
         itemName = itemSlot.value.toLowerCase();
     }
 
-    var word = dictionary[itemName];
+    // var word = dictionary[itemName];
+    var word = translator.fetchTranslation(itemName);
 
     if (word) {
         this.attributes['speechOutput'] = word;
