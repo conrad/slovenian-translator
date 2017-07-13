@@ -1,0 +1,29 @@
+{
+  "session": {
+    "sessionId": "SessionId.625c10d6-9d39-4a1c-be0d-b02116d60c50",
+    "application": {
+      "applicationId": "amzn1.ask.skill.00000"
+    },
+    "attributes": {},
+    "user": {
+      "userId": null
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.abc5ecb4-98f3-4a4c-a870-396be9a57ad4",
+    "locale": "en-US",
+    "timestamp": "2017-07-13T13:40:09Z",
+    "intent": {
+      "name": "GetWordIntent",
+      "slots": {
+        "Word": {
+          "name": "Word",
+          "value": "love"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

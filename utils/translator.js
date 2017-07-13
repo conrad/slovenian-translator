@@ -1,28 +1,32 @@
 'use strict'
 
 const Translate = require('@google-cloud/translate');
-const GOOGLE_APPLICATION_CREDENTIALS = require('../credentials/the-slovene-34fef3f36fb0.json')
+const GOOGLE_APPLICATION_CREDENTIALS = require('../credentials/google-translate.json')
 const targetLanguage = 'sl';
 
 module.exports = {
-  fetchTranslation : function(phrase) {
+  fetchTranslation : function(phrase, cb) {
+    console.log('start fetchTransaltion()');
     const translateClient = Translate({
       projectId: GOOGLE_APPLICATION_CREDENTIALS.project_id
     });
 
+    console.log('translate client instantiated');
     translateClient.translate(phrase, targetLanguage)
-      .then((results) => {
-        const translation = results[0];
-        // const translation = results.data.translations[0].translatedText; 
+    .then((results) => {
+      console.log('Received result from GTranslate');
+      const translation = results[0];
+      // const translation = results.data.translations[0].translatedText; 
 
-        console.log(`Text: ${phrase}`);
-        console.log(`Translation: ${translation}`);
+      console.log(`Text: ${phrase}`);
+      console.log(`Translation: ${translation}`);
 
-        return translation;
-      })
-      .catch((err) => {
-        console.error('ERROR:', err);
-      });
+      cb(null, translation);
+    })
+    .catch((err) => {
+     console.error('ERROR:', err);
+     cb(err);
+    });
   }
 };
 
